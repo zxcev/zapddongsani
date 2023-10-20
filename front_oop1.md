@@ -331,7 +331,7 @@ const student = new Student(name, age, school);
 
 `this`와 반환이 없는 것을 이해하는데는 도움이 될 것이라 생각합니다.
 
-정리하면 JS의 함수 호출은 2가지 방식이 있으며,
+JS의 함수 호출은 2가지 방식이 있으며,
 
 `new`를 붙인 함수 호출은 앞서 설명했듯 빈 객체를 생성하고 첫 번째 인자로 넘겨서 필드를 채워 넣는다.
 
@@ -343,8 +343,13 @@ JS의 `class`는 함수를 대부분의 사람들이 여타 Java, C# 등의 객�
 
 `class`의 생성자(`constructor`)가 바로 객체 생성하는 함수의 바디가 들어가는 부분이다. 라는 것입니다.
 
+ES5까지는 `class` 문법 자체가 존재하지 않았기에 함수를 사용해서 객체를 생성할 수 있으며,
+
+`class`는 ES6(ES2015)부터 지원됩니다.
+
 ```js
 class Person1 {
+	// 클래스명이 결국 함수명이 되고, 생성자의 인자와 내부 로직이 그대로 함수 인자 및 바디가 된다.
 	constructor(name, age) {
 		this.name = name;
 		this.age = age;
