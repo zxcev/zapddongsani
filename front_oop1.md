@@ -339,12 +339,12 @@ const student = new Student(name, age, school);
 
 JS의 `class`는 함수를 대부분의 사람들이 여타 Java, C# 등의 객체 지향 언어의 문법에 너무 익숙해졌기 때문에
 
-편의를 위해 함수를 `class` 처럼 보이는 문법으로 만들었고,
+편의를 위해 `new` 키워드로 함수 호출 시, 객체 생성하는 함수를 `class` 처럼 보이는 문법으로 만들었고,
 
-생성자 호출하는 부분이 바로 객체 생성하는 함수의 바디가 들어가는 부분이다. 라는 것입니다.
+`class`의 생성자(`constructor`)가 바로 객체 생성하는 함수의 바디가 들어가는 부분이다. 라는 것입니다.
 
 ```js
-class Person1(name, age) {
+class Person1 {
 	constructor(name, age) {
 		this.name = name;
 		this.age = age;
