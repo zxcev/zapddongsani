@@ -344,9 +344,11 @@ JS의 `class`는 함수를 대부분의 사람들이 여타 Java, C# 등의 객�
 생성자 호출하는 부분이 바로 객체 생성하는 함수의 바디가 들어가는 부분이다. 라는 것입니다.
 
 ```js
-function Person1(name, age) {
-	this.name = name;
-	this.age = age;
+class Person1(name, age) {
+	constructor(name, age) {
+		this.name = name;
+		this.age = age;
+	}
 }
 
 
