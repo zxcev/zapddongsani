@@ -237,8 +237,8 @@ class Person {
 	}
 
 	// setter도 인자에 타입이 붙는다는 것만 다름
-	set age(age: number) {
-		this.age = age;
+	set name(name: string) {
+		this.name = name;
 	}
 }
 ```
