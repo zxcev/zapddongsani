@@ -236,16 +236,16 @@ class Person {
 		return this.name;
 	}
 
-	// getter도 리턴 타입이 붙는다는 것만 다름
-	get age(): number {
-		return this.age;
+	// setter도 인자에 타입이 붙는다는 것만 다름
+	set age(age: number) {
+		this.age = age;
 	}
 }
 ```
 
 `private` , 타입이 조금 추가된 것 빼고는 JS와 비슷합니다.
 
-setter를 안 만든 이유는 다음과 같습니다.
+그러나 위 코드에는 오류가 존재합니다.
 
 ![](/imgs/front_oop4_1.png)
 
