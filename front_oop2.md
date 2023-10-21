@@ -393,7 +393,7 @@ const a = new Person('a', 1 ,1);
 
 
 
-// 실제 일어나는 일
+// 실제 일어나는 일(아래 모든 코드)
 const a = {
 	__proto__: {
 		constructor: /* 이전에 만든 Person의 constructor */,
