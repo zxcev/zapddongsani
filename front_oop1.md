@@ -303,10 +303,13 @@ function Student(this, name, age, school) {
 	// 그런데 반환값이 없다.
 }
 
+// 이게 원래 문법이다.
+const student = new Student(name, age, school);
+
 // 사실 빈 객체를 생성하고 이를 첫 번째 인자로 넘긴 뒤,
 // 함수 내에서 해당 빈 객체에 필드를 넣어주는 것이라고 생각해도 무방하다.
 const student = {};
-new Student(student, name, age, school);
+Student(student, name, age, school);
 ```
 
 주석에 쓰여진 그대로입니다.
