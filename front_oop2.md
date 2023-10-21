@@ -379,7 +379,7 @@ class Person {
 
 `a`라는 `Person`의 객체를 크롬 콘솔에서 생성한 결과는 다음과 같습니다.
 
-![](imgs/front_oop2.png)
+![](/imgs/front_oop2.png)
 
 `new Person`으로 생성했기 때문에 `a.__proto__`의 `constructor`는 `class Person`이라 적혀 있습니다.
 
