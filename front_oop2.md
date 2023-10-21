@@ -315,7 +315,7 @@ class Person {
 
 이렇게 유효하지 않은 데이터를 갖는 객체가 생성되는 것을 막기 위해 생성자 내에서 검증 로직을 작성해주면 됩니다.
 
-![[프론트를 위한 JS Class 원리2-1.png]]
+![](/imgs/front_oop2_1.png)
 
 이제 유효하지 않은 값을 입력할 경우, 검사가 이루어진 뒤 예외를 던지게 됩니다.
 
@@ -381,7 +381,7 @@ class Person {
 
 `a`라는 `Person`의 객체를 크롬 콘솔에서 생성한 결과는 다음과 같습니다.
 
-![](/imgs/front_oop2_1.png)
+![](/imgs/front_oop2_2.png)
 
 `new Person`으로 생성했기 때문에 `a.__proto__`의 `constructor`는 `class Person`이라 적혀 있습니다.
 
