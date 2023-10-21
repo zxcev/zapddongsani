@@ -87,7 +87,7 @@ class Person {
 
 이로 말미암아 `class`는 생성자, 메소드를 가지며,
 
-`new <Class명>`으로 호출 시, `constructor`가 호출되며,
+`new <Class명>`으로 호출 시, `constructor`가 호출되며,(`Person class`라면 `Person.constructor` 호출)
 
 `__proto__`라는, `constructor` 및 해당 클래스의 메소드를 모두 가진 객체를 포함한 빈 객체를 생성하여
 
