@@ -1,4 +1,6 @@
-# class와 `__proto__` 파헤치기
+# 프론트를 위한 JS Class 원리2
+
+## class와 `__proto__` 파헤치기
 
 지난 시간 마지막에 봤던 `__proto__`에 익숙하지 않은 분들에게 두려운 존재로 남을 것 같아서
 
@@ -29,11 +31,11 @@ class Person {
 
 위 코드를 그대로 복사하여 크롬 콘솔에 붙여넣어 실행하였습니다.
 
-[](/imgs/front_oop3_1.png)
+![](/imgs/front_oop3_1.png)
 
 이제 `Person` 객체를 크롬 콘솔에서 만들 수 있게 되었겠지요.
 
-[](/imgs/front_oop3_2.png)
+![](/imgs/front_oop3_2.png)
 
 객체를 만들고 살펴보면, `[[Prototype]]`이라는 속성이 보이실 겁니다.
 
@@ -133,7 +135,7 @@ Person.constructor(person, 'a', 1);
 `class`를 좀 더 깊게 이해하는데 도움이 되었으면 좋겠네요.
 
 ---
-# 접근 제어자(Access Modifier)
+## 접근 제어자(Access Modifier)
 
 ```js
 class Person {
@@ -185,7 +187,7 @@ person.age = -1;
 
 이를 위해서는 `age`를 변경할 때도 검증을 해줘야 합니다.
 
-# private access modifier
+## private access modifier
 
 ```js
 // Person Class 외부에서는 #name, #age에 접근할 수 없음
@@ -203,7 +205,7 @@ class Person {
 ```
 
 ES2019부터 도입된 `#` 접근 제어자를 사용하면, 클래스 외부에서 필드에 접근할 수 없게 됩니다.
-[](/imgs/front_oop3_3.png)
+![](/imgs/front_oop3_3.png)
 실제로 VSCode에서 실행해보면 접근 및 수정이 불가능한 것을 확인할 수 있습니다.
 
 읽고 쓰기가 모두 불가능한 상태가 된 것인데,
@@ -285,13 +287,13 @@ person.setAge(-1);
 
 `setAge`로 음수를 삽입해 보겠습니다.
 
-[](/imgs/front_oop3_4.png)
+![](/imgs/front_oop3_4.png)
 
 예외가 던져져서 유효하지 않은 데이터가 입력 되었음을 알려줍니다.
 
 `constructor`, `access modifier`를 사용하여 이제 `Person` 객체는 생성 시부터 소멸 시까지 유효한 데이터를 가질 수 있게 된 것입니다.
 
-[](/imgs/front_oop3_5.png)
+![](/imgs/front_oop3_5.png)
 
 `private` 필드는 `class` 최상단에 명시하지 않으면 VSCode가 오류를 알려줍니다.
 
