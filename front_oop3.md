@@ -1,4 +1,4 @@
-# 프론트를 위한 JS Class 원리2
+# 프론트를 위한 JS Class 원리3
 
 ## class와 `__proto__` 파헤치기
 
